@@ -45,16 +45,16 @@ app.post('/api/items', async (req, res) => {
 //delete
 app.delete('/api/items/:id', async (req, res) => {
     try {
-        let itemToDelete = itemsRef.doc(req.params.id.toString());
+        let deleteItem = itemsRef.doc(req.params.id.toString());
 
-        let item = await itemToDelete.get();
+        let item = await deleteItem.get();
 
         if (!item.exists) {
-            res.status(404).send("Sorry, that item does not exist");
+            res.status(404).send("Sorry, no existe");
             return;
         }
 
-        itemToDelete.delete();
+        deleteItem.delete();
         res.sendStatus(200);
         return;
     }
@@ -67,15 +67,15 @@ app.delete('/api/items/:id', async (req, res) => {
 //edit
 app.put('/api/items/:id', async function(req, res)  {
     try {
-        let itemToEdit = itemsRef.doc(req.params.id.toString());
+        let editItem = itemsRef.doc(req.params.id.toString());
 
-        item = await itemToEdit.get();
+        item = await editItem.get();
 
         if (!item.exists) {
-            res.status(404).send("Sorry, that item does not exist");
+            res.status(404).send("Sorry, no existe");
         }
 
-        itemToEdit.update({
+        editItem.update({
             title: req.body.title,
             description: req.body.description,
         });
