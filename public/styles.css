@@ -78,6 +78,10 @@ input, textarea, select, button {
   font-size: 1em;
 }
 
+input, textarea, select {
+  width: 214px;
+}
+
 .form {
   margin-right: 50px;
 }
@@ -93,7 +97,7 @@ input, textarea, select, button {
 
 /* Suggestions */
 .suggestions {
-  width: 200px;
+  width: 214px;
   border: 1px solid #ccc;
 }
 
@@ -104,6 +108,10 @@ input, textarea, select, button {
 .suggestion:hover {
   background-color: #5BDEFF;
   color: #fff;
+}
+
+.upload input, .upload textarea {
+  width: 300px
 }
 
 /* Masonry */

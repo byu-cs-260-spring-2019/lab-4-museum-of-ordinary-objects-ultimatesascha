@@ -1,0 +1,56 @@
+[debug] [2019-06-11T01:53:33.163Z] ----------------------------------------------------------------------
+[debug] [2019-06-11T01:53:33.168Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bandn\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-06-11T01:53:33.169Z] CLI Version:   6.8.0
+[debug] [2019-06-11T01:53:33.169Z] Platform:      win32
+[debug] [2019-06-11T01:53:33.169Z] Node Version:  v10.15.3
+[debug] [2019-06-11T01:53:33.172Z] Time:          Mon Jun 10 2019 19:53:33 GMT-0600 (Mountain Daylight Time)
+[debug] [2019-06-11T01:53:33.172Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-11T01:53:33.274Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-11T01:53:33.275Z] > authorizing via signed-in user
+[debug] [2019-06-11T01:53:33.275Z] [iam] checking project saschav-lab4-museum for permissions ["firebase.projects.get"]
+[debug] [2019-06-11T01:53:33.283Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-06-11T01:53:33.284Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-06-11T01:53:33.639Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-11T01:53:33.769Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/saschav-lab4-museum:testIamPermissions  
+
+[debug] [2019-06-11T01:53:34.207Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-11T01:53:34.209Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/saschav-lab4-museum  
+ 
+[debug] [2019-06-11T01:53:34.531Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\bandn\Desktop\CS260\Labs\Lab4\lab-4-museum-of-ordinary-objects-ultimatesascha'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-06-11T01:53:45.402Z] Fetching environment
+[debug] [2019-06-11T01:53:45.408Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/403005514640:getServerAppConfig  
+ 
+[debug] [2019-06-11T01:53:45.408Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/403005514640/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-11T01:53:45.676Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-11T01:53:45.677Z] Starting @google-cloud/functions-emulator
+[debug] [2019-06-11T01:53:45.969Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[info] [hosting] Rewriting /api/items to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[debug] [2019-06-11T01:53:56.435Z] Parsing function triggers
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] +  functions: app: http://localhost:5001/saschav-lab4-museum/us-central1/app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/3 to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/carrots to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/saschav-lab4-museum/us-central1/app for local Function app
